@@ -1,14 +1,53 @@
 <template name="question3">
 
 <div id="pagewrap">
-<h1>Player High Lights Real Time</h1>
+<h1>Player Highlights Real Time</h1>
 <marquee behaviour="scroll" direction="left">Gerald Riggs Jr. rush for 20 years for a TOUCHDOWN!</marquee>
 
     <section id="content">
         <h2>Profile Stats</h2>
-        <ul>Toronto Argonauts</ul>
-        <p>Player ID</p>
-        <p>Song name: </p>
+        <table id="tableID" class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Birthplace</th>
+                  <th>Height (ft)</th>
+                  <th>Weight (lbs)</th>
+                </tr>
+              </thead>
+              <tbody>
+              <!-- {{#each patientData}} -->
+                <tr>
+                  <td>Zach Collaros</td>
+                  <td>Steubenville, Ohio</td>
+                  <td>6</td>
+                  <td>216</td>
+                </tr>
+
+                <tr>
+                  <td>Gerald Riggs Jr</td>
+                  <td>Chattanooga, Tennesse</td>
+                  <td>5.11</td>
+                  <td>216</td>
+                </tr>
+
+                <tr>
+                  <td>Anthony Alix</td>
+                  <td>Chattanooga, Tennesse</td>
+                  <td>5.11</td>
+                  <td>189</td>
+                </tr>
+
+                <tr>
+                  <td>Mike Renaud</td>
+                  <td>Ottawa, Ontario</td>
+                  <td>6.02</td>
+                  <td>214</td>
+                </tr>
+
+              </tbody>
+            </table>
+
 
     </section>
 
@@ -20,23 +59,28 @@
         <p>The quarterback (QB) is the player directly behind the center receiving the ball.</p>
     </section>
 
-    <aside id="sidebar">
+    <section id="sidebar">
         <h2>Song</h2>
         <div id="player"></div>
         <p>Artist name: Taylor Swift</p>
         <p>Song name: Blank Space</p>
 
         <button class="next-btn" id="btn-one">Play</button>
-    </aside>
 
 
-<div id="this">
-    <p>MVP + Favorite</p>
-    <img src="/images/pic1/5617360.jpeg" id="mvp-one">
-    <img src="/images/pic2/Gerald-Riggs-Jr-CROPPED.jpg" id="mvp-two">
-    <img src="/images/pic3/rgtydnbsd222j231.jpg" id="mvp-three">
-    <img src="/images/pic5/mike-renaud-copy1.jpg" id="mvp-four">
-    </div>
+        <p>MVP + Favorite</p>
+
+        <img src="/images/pic1/5617360.jpeg" height="75px" width=auto id="mvp-one">
+        <img src="/images/pic2/Gerald-Riggs-Jr-CROPPED.jpg" height="75px" width=auto id="mvp-two">
+        <img src="/images/pic3/rgtydnbsd222j231.jpg" height="75px" width=auto id="mvp-three">
+        <img src="/images/pic5/mike-renaud-copy1.jpg" height="75px" width=auto id="mvp-four">
+
+    </section>
+
+
+
+
+
 
     </div>
 </template>
